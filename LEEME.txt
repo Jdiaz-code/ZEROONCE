@@ -1,0 +1,14 @@
+ZERO ONZE - WEB
+===============
+Contenido (subir TODO tal cual, respetando la carpeta img):
+  index.html        La página
+  intro.mp4         Animación del logo (encabezado)
+  favicon.svg       Icono de la pestaña
+  img/              Fotos, icono y vista previa al compartir
+  .nojekyll         Archivo vacío necesario para GitHub Pages (no borrar)
+
+Antes de subir: abre index.html con el Bloc de notas, busca TU-DOMINIO
+(sale varias veces, cámbialo en todas) y cámbialo por la dirección final de la web,
+por ejemplo: tuusuario.github.io/zeroonze   o   zeroonze.es
+
+Las instrucciones paso a paso están en el chat.

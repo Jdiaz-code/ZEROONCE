@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zero Onze Hair Studio · Barbería en Teatinos, Málaga</title>
+<meta name="description" content="Barbería en Teatinos (Málaga). Cortes, degradados, barba y afeitado. Av. Parménides 17. Reserva tu cita en Booksy o al 624 22 19 15.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/icon-512.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<!-- Vista previa al compartir (WhatsApp, Instagram, etc.). Cambia TU-DOMINIO por la dirección real de la web. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zero Onze Hair Studio · Barbería en Teatinos">
+<meta property="og:description" content="Cortes, degradados y barba en Teatinos, Málaga. Reserva tu cita en Booksy.">
+<meta property="og:image" content="https://TU-DOMINIO/img/og.jpg">
+<meta property="og:url" content="https://TU-DOMINIO/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"Zero Onze Hair Studio","image":"https://TU-DOMINIO/img/og.jpg","telephone":"+34624221915","priceRange":"€","address":{"@type":"PostalAddress","streetAddress":"Avenida Parménides, 17","addressLocality":"Málaga","postalCode":"29010","addressCountry":"ES"},"sameAs":["https://www.instagram.com/zeroonzehairstudio/","https://zeroonzehairstudio83.booksy.com"]}
+</script>
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=Montserrat:wght@500;600&family=Inter:wght@400;500&display=swap">
+<style>
+/* Layout: one dark steel wall. Film opens the page, then sections hang on the wall like the logo; the triangle is the only ornament. */
+:root{
+  --wall:#0b0b0b;        /* matches the video background */
+  --wall-2:#141414;      /* raised panels */
+  --graphite:#2a2a2a;    /* rules, borders */
+  --steel:#9a9a9a;       /* secondary text, brushed metal */
+  --steel-hi:#d6d6d6;    /* metal highlight */
+  --white:#f4f4f2;
+  --f-display:"Big Shoulders Display","Oswald","Arial Narrow",sans-serif;
+  --f-label:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --metal:linear-gradient(165deg,#f2f2f2 0%,#a9a9a9 38%,#e0e0e0 55%,#8a8a8a 100%);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--wall);color:var(--white);font:400 16px/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--wall)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--steel-hi);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.label{font:600 12px/1.2 var(--f-label);letter-spacing:.32em;text-transform:uppercase;color:var(--steel)}
+h2{font:800 clamp(44px,7vw,84px)/.92 var(--f-display);text-transform:uppercase;letter-spacing:.02em;margin:0;text-wrap:balance;
+   background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font:600 12px/1 var(--f-label);letter-spacing:.24em;text-transform:uppercase;text-decoration:none;border:1px solid var(--steel);color:var(--white);background:transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--white);color:var(--wall);border-color:var(--white)}
+.btn.solid{background:var(--metal);color:#111;border-color:transparent}
+.btn.solid:hover{background:var(--white)}
+.tri{width:.9em;height:.78em;flex:none}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,11,11,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--graphite)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 22px/1 var(--f-display);letter-spacing:.12em}
+.brand svg{width:22px;height:19px}
+.links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.links a{font:500 12px/1 var(--f-label);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--steel);transition:color .2s}
+.links a:hover{color:var(--white)}
+.nav .btn{padding:11px 18px}
+.nav .wrap>div{display:flex;align-items:center;gap:10px}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--graphite);background:none;color:var(--white);cursor:pointer;place-items:center}
+.burger span{display:block;width:18px;height:1.5px;background:currentColor;position:relative;transition:transform .3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:currentColor;transition:transform .3s,top .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.nav.open .burger span{background:transparent}
+.nav.open .burger span::before{top:0;transform:rotate(45deg)}
+.nav.open .burger span::after{top:0;transform:rotate(-45deg)}
+.drawer{display:none}
+.mbar{display:none}
+@media (max-width:860px){
+  .links{display:none}
+  .burger{display:grid}
+  .nav.open .drawer{display:grid}
+  .drawer{border-top:1px solid var(--graphite);padding:8px max(16px,env(safe-area-inset-right,0px)) 20px max(16px,env(safe-area-inset-left,0px))}
+  .drawer a{font:700 34px/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:14px 0;border-bottom:1px solid var(--graphite);display:flex;justify-content:space-between;align-items:center}
+  .drawer a svg{width:14px;height:12px;color:var(--steel)}
+}
+@media (max-width:600px){
+  .nav .wrap>div>.btn{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(11,11,11,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--graphite);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+  .mbar .btn{justify-content:center;padding:15px 10px;letter-spacing:.18em}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  section{padding-block:64px}
+  .head{margin-bottom:32px}
+  .hero{padding-block:0 52px}
+  .hero-copy p{font-size:16px}
+  .hero-copy .cta-row .btn.solid{display:none}
+  .studio{gap:32px}
+  .facts b{font-size:28px}
+  .facts span{font-size:10px;letter-spacing:.12em}
+  .services li{padding:18px 0}
+  .services h3{font-size:24px}
+  .note .btn{width:100%;justify-content:center}
+  .card{padding:24px 20px}
+  .row .v{font-size:26px}
+  .visit .cta-row .btn{flex:1;justify-content:center}
+  .team a{padding:24px 20px}
+  .replay{opacity:1}
+}
+
+/* hero */
+.hero{position:relative;text-align:center;padding-block:8px 72px;overflow:hidden}
+.film{position:relative;width:min(640px,100%);margin:0 auto;aspect-ratio:1;max-width:100%}
+.film video{width:100%;height:100%;display:block;object-fit:cover}
+.film::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(closest-side,transparent 72%,var(--wall) 100%)}
+.replay{position:absolute;right:6%;bottom:6%;z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid var(--graphite);background:rgba(20,20,20,.7);color:var(--steel);cursor:pointer;display:grid;place-items:center;opacity:0;transition:opacity .4s,color .2s}
+.replay.show{opacity:1}
+.replay:hover{color:var(--white)}
+.hero-copy{position:relative;z-index:1;display:grid;gap:22px;justify-items:center;margin-top:20px}
+.hero-copy p{margin:0;max-width:34ch;color:var(--steel);font-size:17px}
+.stars{font:600 12px/1 var(--f-label);letter-spacing:.14em;color:var(--steel-hi)}
+.stars b{color:var(--white)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+section{padding-block:96px;border-top:1px solid var(--graphite)}
+.head{display:grid;gap:14px;margin-bottom:48px}
+
+/* estudio */
+.studio{display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:end}
+.studio p{color:var(--steel);max-width:52ch;margin:0}
+.studio .text{display:grid;gap:22px;min-width:0}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--graphite);border:1px solid var(--graphite);margin-top:8px}
+.facts div{background:var(--wall);padding:18px 16px;display:grid;gap:6px}
+.facts b{font:700 34px/1 var(--f-display);letter-spacing:.04em}
+.facts span{font:500 11px/1.3 var(--f-label);letter-spacing:.18em;text-transform:uppercase;color:var(--steel)}
+.shots{display:grid;grid-template-columns:1fr;gap:14px;min-width:0}
+.shots figure{margin:0;overflow:hidden;aspect-ratio:16/9;max-width:100%}
+.shots img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) contrast(1.05);transition:filter .5s,transform .8s}
+.shots figure:hover img{filter:none;transform:scale(1.03)}
+@media (max-width:860px){.studio{grid-template-columns:1fr}}
+
+/* cortes */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;aspect-ratio:3/4;max-width:100%;display:block;background:var(--wall-2)}
+.gallery button:focus-visible{outline:2px solid var(--steel-hi);outline-offset:3px}
+.gallery img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08);transition:filter .5s,transform .8s}
+.gallery button:hover img,.gallery button:focus-visible img{filter:none;transform:scale(1.04)}
+.gallery .tag{position:absolute;left:12px;bottom:12px;font:600 10px/1 var(--f-label);letter-spacing:.24em;text-transform:uppercase;background:rgba(11,11,11,.8);padding:8px 10px;color:var(--steel-hi)}
+@media (max-width:700px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}}
+.more{margin-top:32px;display:flex;justify-content:center}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(5,5,5,.94);display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(24px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-height:86vh;max-width:100%;object-fit:contain}
+.lb button{position:absolute;background:none;border:1px solid var(--graphite);color:var(--white);width:44px;height:44px;cursor:pointer;font:500 20px/1 var(--f-body)}
+.lb .x{top:calc(16px + env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px))}
+.lb .prev{left:max(16px,env(safe-area-inset-left,0px));top:50%}
+.lb .next{right:max(16px,env(safe-area-inset-right,0px));top:50%}
+
+/* servicios */
+.services{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+.services li{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;padding:22px 0;border-bottom:1px solid var(--graphite);min-width:0}
+.services svg{grid-row:span 2;width:14px;height:12px;margin-top:9px;color:var(--steel)}
+.services h3{margin:0;font:700 28px/1.1 var(--f-display);letter-spacing:.06em;text-transform:uppercase}
+.services p{margin:0;color:var(--steel);font-size:15px}
+.note{margin-top:28px;color:var(--steel);font-size:15px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+@media (max-width:760px){.services{grid-template-columns:1fr}}
+
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.menu .group{min-width:0}
+.menu h3.label{margin:0 0 6px;font-weight:600}
+.menu ul{list-style:none;margin:0;padding:0}
+.menu li{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;column-gap:12px;row-gap:2px;padding:16px 0;border-bottom:1px solid var(--graphite)}
+.menu .n{font:700 27px/1.1 var(--f-display);letter-spacing:.05em;text-transform:uppercase;min-width:0}
+.menu i{border-bottom:1px dotted #4a4a4a;transform:translateY(-6px)}
+.menu .p{font:800 28px/1 var(--f-display);letter-spacing:.03em;font-variant-numeric:tabular-nums;background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+.menu .m{grid-column:1/-1;font:500 11px/1.4 var(--f-label);letter-spacing:.16em;text-transform:uppercase;color:var(--steel);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.menu em{font-style:normal;color:var(--wall);background:var(--steel-hi);padding:3px 7px;font-size:9px;letter-spacing:.2em}
+@media (max-width:760px){.menu{grid-template-columns:1fr;gap:40px}.menu .n{font-size:22px}.menu .p{font-size:24px}}
+
+/* equipo */
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--graphite);border:1px solid var(--graphite)}
+.team a{background:var(--wall);padding:32px 26px;text-decoration:none;display:grid;gap:10px;transition:background .3s}
+.team a:hover{background:var(--wall-2)}
+.team strong{font:700 30px/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase}
+.team .handle{font:500 13px/1 var(--f-label);letter-spacing:.08em;color:var(--steel)}
+@media (max-width:760px){.team{grid-template-columns:1fr}}
+
+/* visita */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.card{background:var(--wall-2);border:1px solid var(--graphite);padding:32px;display:grid;gap:26px;min-width:0}
+.row{display:grid;gap:6px}
+.row .v{font:700 32px/1.1 var(--f-display);letter-spacing:.05em;text-transform:uppercase}
+.phone{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.copy{background:none;border:1px solid var(--graphite);color:var(--steel);font:600 10px/1 var(--f-label);letter-spacing:.2em;text-transform:uppercase;padding:9px 12px;cursor:pointer}
+.copy:hover{color:var(--white);border-color:var(--steel)}
+.visit .big{font:800 clamp(56px,10vw,128px)/.85 var(--f-display);text-transform:uppercase;margin:0;letter-spacing:.01em;background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+.visit .lead{color:var(--steel);max-width:40ch;margin:22px 0 28px}
+@media (max-width:860px){.visit{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--graphite);padding-block:36px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+footer .label{font-size:11px}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="tri" viewBox="0 0 24 21"><path d="M12 1.5 22.6 19.5H1.4Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter"/></symbol>
+</svg>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg><use href="#tri"/></svg>ZERO ONZE</a>
+    <ul class="links">
+      <li><a href="#estudio">Estudio</a></li>
+      <li><a href="#cortes">Cortes</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#visitanos">Visítanos</a></li>
+    </ul>
+    <div>
+      <a class="btn solid" href="https://zeroonzehairstudio83.booksy.com" target="_blank" rel="noopener">Pedir cita</a>
+      <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><span></span></button>
+    </div>
+  </div>
+  <div class="drawer" id="drawer">
+    <a href="#estudio">Estudio<svg><use href="#tri"/></svg></a>
+    <a href="#cortes">Cortes<svg><use href="#tri"/></svg></a>
+    <a href="#servicios">Servicios<svg><use href="#tri"/></svg></a>
+    <a href="#equipo">Equipo<svg><use href="#tri"/></svg></a>
+    <a href="#visitanos">Visítanos<svg><use href="#tri"/></svg></a>
+  </div>
+</nav>
+
+<div class="mbar">
+  <a class="btn solid" href="https://zeroonzehairstudio83.booksy.com" target="_blank" rel="noopener">Pedir cita</a>
+  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Avenida+Parm%C3%A9nides+17+M%C3%A1laga" target="_blank" rel="noopener">Cómo llegar</a>
+</div>
+
+<header class="hero" id="inicio">
+  <div class="film">
+    <video id="intro" src="intro.mp4" poster="img/intro-poster.jpg" muted playsinline autoplay preload="auto" aria-label="Animación del logo Zero Onze"></video>
+    <button class="replay" id="replay" type="button" aria-label="Repetir animación">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+    </button>
+  </div>
+  <div class="hero-copy wrap">
+    <span class="label">Barbería · Teatinos · Málaga</span>
+    <span class="stars" aria-label="Valoración 5 de 5 en Booksy, 561 reseñas">★★★★★ <b>5.0</b> · 561 reseñas</span>
+    <p>Degradados limpios, barbas bien perfiladas y un estudio donde cada corte se trabaja con calma.</p>
+    <div class="cta-row">
+      <a class="btn solid" href="https://zeroonzehairstudio83.booksy.com" target="_blank" rel="noopener"><svg class="tri"><use href="#tri"/></svg>Reservar en Booksy</a>
+      <a class="btn" href="#cortes">Ver trabajos</a>
+    </div>
+  </div>
+</header>
+
+<section id="estudio">
+  <div class="wrap studio">
+    <div class="text">
+      <div class="head" style="margin:0">
+        <span class="label">El estudio</span>
+        <h2>Hecho a navaja desde 2023</h2>
+      </div>
+      <p>Zero Onze abrió en marzo de 2023 en la Avenida Parménides, en pleno Teatinos. Un local luminoso, sillones clásicos de barbero y arte urbano en las paredes. Aquí cada corte se trabaja sin prisa, con la máquina, la tijera y la navaja.</p>
+      <div class="facts">
+        <div><b>2023</b><span>Desde</span></div>
+        <div><b>3</b><span>Barberos</span></div>
+        <div><b>5.0</b><span>561 reseñas en Booksy</span></div>
+      </div>
+    </div>
+    <div class="shots">
+      <figure><img src="img/estudio-2.jpg" alt="Interior de Zero Onze con tres sillones de barbero y cuadros de arte pop" loading="lazy"></figure>
+      <figure><img src="img/estudio-1.jpg" alt="Vista del estudio desde la entrada, con espejos y zona de espera" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="cortes">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Trabajos recientes</span>
+      <h2>Salen así</h2>
+    </div>
+    <div class="gallery" id="gallery">
+      <button type="button" data-i="0"><img src="img/corte-2.jpg" alt="Buzz cut con skin fade y raya marcada" loading="lazy"><span class="tag">Skin fade</span></button>
+      <button type="button" data-i="1"><img src="img/corte-4.jpg" alt="Corte con volumen y mechas, degradado bajo" loading="lazy"><span class="tag">Low fade</span></button>
+      <button type="button" data-i="2"><img src="img/corte-5.jpg" alt="Peinado hacia atrás con barba perfilada" loading="lazy"><span class="tag">Corte + barba</span></button>
+      <button type="button" data-i="3"><img src="img/corte-1.jpg" alt="Raya lateral con degradado y barba definida" loading="lazy"><span class="tag">Side part</span></button>
+      <button type="button" data-i="4"><img src="img/corte-3.jpg" alt="Corte texturizado con taper en la nuca" loading="lazy"><span class="tag">Taper</span></button>
+      <button type="button" data-i="5"><img src="img/corte-6.jpg" alt="Barbero de Zero Onze con un cliente recién cortado" loading="lazy"><span class="tag">En el sillón</span></button>
+    </div>
+    <div class="more"><a class="btn" href="https://www.instagram.com/zeroonzehairstudio/" target="_blank" rel="noopener">Más en Instagram</a></div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Servicios</span>
+      <h2>Lo que hacemos</h2>
+    </div>
+    <div class="menu">
+      <div class="group">
+        <h3 class="label">Corte</h3>
+        <ul>
+          <li><span class="n">Corte</span><i></i><span class="p">14 €</span><span class="m">30 min<em>Popular</em></span></li>
+          <li><span class="n">Corte + lavado</span><i></i><span class="p">16 €</span><span class="m">30 min</span></li>
+          <li><span class="n">Corte + barba</span><i></i><span class="p">18 €</span><span class="m">30 min<em>Popular</em></span></li>
+          <li><span class="n">Corte + barba + lavado</span><i></i><span class="p">20 €</span><span class="m">30 min<em>Popular</em></span></li>
+          <li><span class="n">Corte niños hasta 8 años</span><i></i><span class="p">11 €</span><span class="m">30 min</span></li>
+          <li><span class="n">Corte jubilado</span><i></i><span class="p">9,50 €</span><span class="m">30 min</span></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3 class="label">Barba y afeitado</h3>
+        <ul>
+          <li><span class="n">Recorte de barba</span><i></i><span class="p">9 €</span><span class="m">30 min</span></li>
+          <li><span class="n">Afeitado de cabeza + barba</span><i></i><span class="p">15 €</span><span class="m">30 min</span></li>
+        </ul>
+        <h3 class="label" style="margin-top:40px">Color · cita por teléfono</h3>
+        <ul>
+          <li><span class="n">Mechas</span><i></i><span class="p">35 €</span><span class="m">30 min · llamar al 624 22 19 15</span></li>
+          <li><span class="n">Decoloración</span><i></i><span class="p">Consultar</span><span class="m">Llamar al 624 22 19 15</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      <span>Elige servicio, barbero y hora en Booksy. Bonos de varias sesiones disponibles.</span>
+      <a class="btn solid" href="https://zeroonzehairstudio83.booksy.com" target="_blank" rel="noopener">Reservar ahora</a>
+    </div>
+  </div>
+</section>
+
+<section id="equipo">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Equipo</span>
+      <h2>Las manos</h2>
+    </div>
+    <div class="team">
+      <a href="https://www.instagram.com/spaunzero11/" target="_blank" rel="noopener"><span class="label">Fundador</span><strong>Jesús Spaun</strong><span class="handle">@spaunzero11</span></a>
+      <a href="https://www.instagram.com/josemoya8/" target="_blank" rel="noopener"><span class="label">Barbero</span><strong>José Moya</strong><span class="handle">@josemoya8</span></a>
+      <a href="https://www.instagram.com/juniorriios/" target="_blank" rel="noopener"><span class="label">Barbero</span><strong>Junior Ríos</strong><span class="handle">@juniorriios</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="visitanos">
+  <div class="wrap visit">
+    <div>
+      <span class="label">Visítanos</span>
+      <p class="big">Teatinos</p>
+      <p class="lead">Reserva tu hueco en Booksy o llámanos. Si pasas por la zona, entra y pregunta.</p>
+      <div class="cta-row" style="justify-content:flex-start">
+        <a class="btn solid" href="https://zeroonzehairstudio83.booksy.com" target="_blank" rel="noopener"><svg class="tri"><use href="#tri"/></svg>Pedir cita</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Avenida+Parm%C3%A9nides+17+M%C3%A1laga" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row"><span class="label">Dirección</span><span class="v">Av. Parménides, 17</span><span style="color:var(--steel)">Teatinos · 29010 Málaga</span></div>
+      <div class="row"><span class="label">Horario</span><span class="v">10:00 – 21:00</span><span style="color:var(--steel)">Festivos y cierres, en Booksy</span></div>
+      <div class="row"><span class="label">Citas</span>
+        <div class="phone"><span class="v" id="tel">624 22 19 15</span><button class="copy" id="copy" type="button">Copiar</button></div>
+      </div>
+      <div class="row"><span class="label">Instagram</span><a class="v" style="text-decoration:none" href="https://www.instagram.com/zeroonzehairstudio/" target="_blank" rel="noopener">@zeroonzehairstudio</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg><use href="#tri"/></svg>ZERO ONZE</a>
+    <span class="label">By Jesús Spaun · Since 2023</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Galería">
+  <img id="lbimg" alt="">
+  <button class="x" id="lbx" type="button" aria-label="Cerrar">×</button>
+  <button class="prev" id="lbp" type="button" aria-label="Anterior">‹</button>
+  <button class="next" id="lbn" type="button" aria-label="Siguiente">›</button>
+</div>
+
+<script>
+(function(){
+  var v=document.getElementById('intro'), r=document.getElementById('replay');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){v.removeAttribute('autoplay');try{v.pause()}catch(e){};r.classList.add('show');}
+  else{var p=v.play&&v.play(); if(p&&p.catch)p.catch(function(){r.classList.add('show')});}
+  v.addEventListener('ended',function(){r.classList.add('show')});
+  r.addEventListener('click',function(){r.classList.remove('show');v.currentTime=0;var q=v.play();if(q&&q.catch)q.catch(function(){});});
+
+  var btns=[].slice.call(document.querySelectorAll('#gallery button'));
+  var lb=document.getElementById('lb'), im=document.getElementById('lbimg'), cur=0, last=null;
+  function show(i){cur=(i+btns.length)%btns.length;var s=btns[cur].querySelector('img');im.src=s.src;im.alt=s.alt;}
+  function open(i){last=document.activeElement;show(i);lb.hidden=false;document.getElementById('lbx').focus();}
+  function close(){lb.hidden=true;if(last)last.focus();}
+  btns.forEach(function(b,i){b.addEventListener('click',function(){open(i)})});
+  document.getElementById('lbx').onclick=close;
+  document.getElementById('lbp').onclick=function(){show(cur-1)};
+  document.getElementById('lbn').onclick=function(){show(cur+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1);});
+
+  var nav=document.querySelector('.nav'), bg=document.getElementById('burger');
+  bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');});
+  [].forEach.call(document.querySelectorAll('#drawer a'),function(a){a.addEventListener('click',function(){nav.classList.remove('open');bg.setAttribute('aria-expanded','false');})});
+
+  var c=document.getElementById('copy');
+  c.addEventListener('click',function(){
+    var t='624221915';
+    function sel(){var rg=document.createRange();rg.selectNodeContents(document.getElementById('tel'));var s=getSelection();s.removeAllRanges();s.addRange(rg);c.textContent='Seleccionado';}
+    try{navigator.clipboard.writeText(t).then(function(){c.textContent='Copiado'},sel)}catch(e){sel()}
+    setTimeout(function(){c.textContent='Copiar'},2200);
+  });
+})();
+</script>
+
+</body>
+</html>
