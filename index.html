@@ -118,6 +118,10 @@ h2{font:800 clamp(44px,7vw,84px)/.92 var(--f-display);text-transform:uppercase;l
 .replay{position:absolute;right:6%;bottom:6%;z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid var(--graphite);background:rgba(20,20,20,.7);color:var(--steel);cursor:pointer;display:grid;place-items:center;opacity:0;transition:opacity .4s,color .2s}
 .replay.show{opacity:1}
 .replay:hover{color:var(--white)}
+.sound{position:absolute;left:6%;bottom:6%;z-index:2;display:flex;align-items:center;gap:8px;height:40px;padding:0 14px 0 12px;border-radius:20px;border:1px solid var(--graphite);background:rgba(20,20,20,.7);color:var(--steel);cursor:pointer;font:600 10px/1 var(--f-label);letter-spacing:.2em;text-transform:uppercase;transition:color .2s,border-color .2s}
+.sound:hover,.sound.on{color:var(--white);border-color:var(--steel)}
+.sound .off{display:block}.sound .onI{display:none}
+.sound.on .off{display:none}.sound.on .onI{display:block}
 .hero-copy{position:relative;z-index:1;display:grid;gap:22px;justify-items:center;margin-top:20px}
 .hero-copy p{margin:0;max-width:34ch;color:var(--steel);font-size:17px}
 .stars{font:600 12px/1 var(--f-label);letter-spacing:.14em;color:var(--steel-hi)}
@@ -243,6 +247,11 @@ footer .label{font-size:11px}
 <header class="hero" id="inicio">
   <div class="film">
     <video id="intro" src="intro.mp4" poster="img/intro-poster.jpg" muted playsinline autoplay preload="auto" aria-label="Animación del logo Zero Onze"></video>
+    <button class="sound" id="sound" type="button" aria-pressed="false" aria-label="Activar sonido">
+      <svg class="off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+      <svg class="onI" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+      <span id="soundtxt">Sonido</span>
+    </button>
     <button class="replay" id="replay" type="button" aria-label="Repetir animación">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
     </button>
@@ -392,7 +401,14 @@ footer .label{font-size:11px}
   if(reduce){v.removeAttribute('autoplay');try{v.pause()}catch(e){};r.classList.add('show');}
   else{var p=v.play&&v.play(); if(p&&p.catch)p.catch(function(){r.classList.add('show')});}
   v.addEventListener('ended',function(){r.classList.add('show')});
-  r.addEventListener('click',function(){r.classList.remove('show');v.currentTime=0;var q=v.play();if(q&&q.catch)q.catch(function(){});});
+  function replay(){r.classList.remove('show');v.currentTime=0;var q=v.play();if(q&&q.catch)q.catch(function(){r.classList.add('show')});}
+  r.addEventListener('click',replay);
+  var sb=document.getElementById('sound');
+  sb.addEventListener('click',function(){
+    v.muted=!v.muted; var on=!v.muted;
+    sb.classList.toggle('on',on); sb.setAttribute('aria-pressed',on); sb.setAttribute('aria-label',on?'Silenciar':'Activar sonido');
+    if(on) replay();
+  });
 
   var btns=[].slice.call(document.querySelectorAll('#gallery button'));
   var lb=document.getElementById('lb'), im=document.getElementById('lbimg'), cur=0, last=null;
